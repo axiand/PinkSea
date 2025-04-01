@@ -7,6 +7,7 @@ import { xrpc } from '@/api/atproto/client'
 import Loader from '@/components/Loader.vue'
 import Intersector from '@/components/Intersector.vue'
 import PostViewOekakiChildCard from '@/components/oekaki/PostViewOekakiChildCard.vue'
+import AFTopBanner from '@/components/AFTopBanner.vue'
 
   const props = defineProps<{
     endpoint: keyof Queries,
@@ -52,6 +53,7 @@ import PostViewOekakiChildCard from '@/components/oekaki/PostViewOekakiChildCard
 </script>
 
 <template>
+  <AFTopBanner />
   <Loader v-if="oekaki == null" />
   <div class="timeline-container" v-else-if="oekaki.length > 0">
     <span v-for="oekakiPost of oekaki" v-bind:key="oekakiPost.at" v-bind="oekakiPost">
