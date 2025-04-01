@@ -70,9 +70,9 @@ const surprise = () => {
           </div>
         </div>
         <div class="faq-entry faq-entry-hidden" id="entry-dataset" v-on:click.prevent="revealFaq('entry-dataset')">
-          <b>I heard your Assistant and Art Creator has some issues with cultural insensitivity. What's going on with that?</b>
+          <b>Do you plan to open source your dataset or your models?</b>
           <div>
-            <p>TODO come up with something here before pushing this page. it can be absolutely anything just make it sound nice. we cant afford another pr disaster like last time ~cto</p>
+            <p>What? No. We know we talk about how open we are all the time, but come on, that's just a step too far. There's being open and then there's being too open.</p>
           </div>
         </div>
         <h1>TRY IT NOW!</h1>
